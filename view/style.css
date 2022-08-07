@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-image: url("/Imagens/Capa\ Principal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+/*Title*/
+.PricipalTitle {
+    position: absolute;
+    left: 10%;
+    bottom: 2rem;
+}
+
+.PricipalTitle h1 {
+    margin: 0;
+    font-size: 5rem;
+}
+
+.PricipalTitle h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/*TopBar*/
+.TopBar {
+    display: flex;
+    justify-content: center ;
+    background-color: #A7A7A7;
+}
+
+.ListTopBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    list-style: none;
+}
+
+.ListTopBar li {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.Conteiner {
+    padding: 5vw;
+    background-color: #F5F5F5;
+}
+
+.ParticaoSuperior {
+    display: flex;
+    width: 100%;
+}
+
+/*Esquerda Superior*/
+.EsquerdaSuperior {
+    width: 60%;
+}
+
+
+.TitleCard{
+    font-size: 1.4rem;
+}
+
+.TitleCard h2 {
+    font-family: 'Poppins';
+}
+
+/*Card*/
+.Card {
+    background-color: #efefef;
+    padding: 20px;
+    line-height: 1.7rem;
+}
+
+.fig {
+    width: 100%;
+    height: auto;   
+    padding: 0;
+    margin: 0;
+}
+
+.fig img {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+/*Direita Superior*/
+.DireitaSuperior {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.SectionParticipe {
+    position: sticky;
+    top: 4rem;
+    width: 90%;
+    height: 500px;
+    background-color: #efefef;
+}
+
+.SectionParticipe .TitleCard h2{
+    font-weight: 300;
+}
+
+.InformationCamp h3{
+    font-family: 'Poppins';
+    color: #909090;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.InformationCamp h4 {
+    font-family: 'Poppins';
+    color: 90909f;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.ImagesParticipe {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.ImagesParticipe img{
+    width: 150px;
+}
+
+/*Section Oque é?*/
+.SectionOque {
+
+}
+
+/*Section Idelizadores*/
+.SectionIdealizadores {
+
+}
+
+/*Section Perticipe*/
+.SectionParticipe {
+    text-align: center
+}
+
+/*Section Participações Especiais*/
+.SectionParticipacoesEspeciais {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+}
+
+.SectionParticipacoesEspeciais .TitleCard {
+    text-align: center;
+}
+
+.ParticipantesConteiner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.Participante h4{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.Participante p {
+    font-family: 'Poppins';
+    color: #909090;
+    text-align: center;
+}
+
+.ImageParticipante img{
+    width: 300px;
+}
+
+/*Section Reserva de Inscrição*/
+.SectionReserveInscricao {
+    margin-top: 20vh;
+    background-color: #1e2820;
+    height: auto;
+    padding: 1rem 0 10rem 0;
+}
+
+.SectionReserveInscricao .TitleCard {
+    text-align: center;
+    color: #fff;
+}
+
+.RedesSociais svg {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+form {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form input {
+    width: 100%;
+    background-color: transparent;
+    font-family: 'Poppins';
+    border: 2px solid #fff;
+    margin-top: 30px;
+    height: 4rem;
+    font-size: 1rem;
+    padding: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+form input:focus {
+    animation: identifier 1s ease-in both;
+}
+
+@keyframes identifier {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-size: 100%;
+        background-color: #000000;
+    }
+}
+
+select {
+    background-color: #1e2820;
+    border: 2px solid #fff;
+    height: 4rem;
+    border-radius: .5rem;
+    width: 49%;
+    color: #fff;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #fff;
+}
+
+#enviar-button {
+    width: 100%;
+    height: 5rem;
+    font-size: 1.4rem;
+    font-family: 'Poppins';
+    font-weight: 800;
+    color: #1e2820;
+    border-radius: .5rem;
+    border: none;
+    margin-top: 30px;
+}
+
+.quebra {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.quebra input {
+    margin: 0;
+    width: 49%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #1e2820;
+    padding: 1rem;
+}
+
+.RedesSociais {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.FaleConosco {
+    width: 60%;
+    color: #fff;    
+    text-align: right;
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+/*Modal*/
+.ConteinerModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+}
+
+
+.Modal {
+    font-family: 'Poppins';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, .15);
+    /*background-image: url('/Imagens/BONSAI.png');*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #000000;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+}
+
+.content h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.options label {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.options input {
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+}
+
+.Modal button {
+    margin-top: 20px;
+    width: 60%;
+    height: 70px;
+    background-color: #000000;
+    backdrop-filter: blur(5px);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+}
