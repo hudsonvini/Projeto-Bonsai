@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--Link JS-->
+    <script src="script.js"></script>
     <title>ABN</title>
 </head>
 <body>
-
-    </div>
-
+    
     <!--Header-->
     <header>
         <!--Title-->
@@ -196,8 +197,24 @@
                         <option value="Onibus">Onibus</option>
                     </select>
                 </div>
+
+                <div class="quebra opt">
+                    <h1>Deseja adiquirir a camisa do evento?</h1>
+                    <h2>R$ 60,00</h2>
+                    <div class="options">
+                        <div class="opcao">
+                            <label for="">Sim</label>
+                            <input type="radio" name="sim" id="yes">
+                        </div>
+                        <div class="opcao">
+                            <label for="">Não</label>
+                            <input type="radio" name="nao" id="nao">
+                        </div>
+
+                    </div>
+                </div>
                 <!--Botão de Enviar-->
-                <button id="enviar-button" type="submit">ENVIAR</button>
+                <button id="enviar-button" type="">ENVIAR</button>
             </form>
 
         </div>
@@ -211,8 +228,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">  <path d="M12 0C5.373 0 0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.077V12h3.048V9.356c0-3.01 1.792-4.67 4.533-4.67 1.313 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.956.926-1.956 1.875V12h3.328l-.532 3.47h-2.796v8.384C19.612 22.954 24 17.99 24 12c0-6.627-5.373-12-12-12z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">  <path d="M7.583 21.59c7.721 0 13.98-6.265 13.98-13.993 0-.13.004-.258 0-.387.004-.077 0-.157 0-.235l-.001-.134A10.745 10.745 0 0024 4.336c-.889.379-1.84.641-2.833.766a4.988 4.988 0 002.173-2.727c-.96.551-2.012.958-3.128 1.19A4.955 4.955 0 0016.592 2a4.973 4.973 0 00-4.855 6.044A13.95 13.95 0 011.634 2.905a4.995 4.995 0 00-.652 2.477 5.01 5.01 0 002.206 4.156 4.98 4.98 0 01-2.284-.635 5 5 0 001.477 3.532A4.997 4.997 0 004.937 13.8a5.051 5.051 0 01-2.306.075 5.013 5.013 0 004.643 3.439 10.085 10.085 0 01-6.176 2.1c-.37 0-.737-.02-1.098-.059a13.906 13.906 0 007.583 2.236z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-viewBox="0 0 24 24"
-style=" fill:#fff;">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path></svg>
+            viewBox="0 0 24 24"
+            style=" fill:#fff;">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path></svg>
         </div>
 
         <!--Fale Conosco-->
@@ -232,8 +249,9 @@ style=" fill:#fff;">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5
         <!--Modal-->
         <div class="Modal">
             <div class="content">
-                <h1>Deseja adiquirir a camisa do evento?</h1>
-                <h2>R$ 60,00</h2>
+                <h1>Sua reserva foi realizada com sucesso</h1>
+                <h2>Efetue o pagamento até o dia 10 de Setembro
+                    ou sua reserva será cancelada automaticamente</h2>
                 <div class="options">
                     <label for="yes">Sim</label>
                     <input type="checkbox" name="sim" id="yes">
@@ -246,22 +264,6 @@ style=" fill:#fff;">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5
         </div>
     </div>
 
-
-        <!--modal End-->
-        <div class="ConteinerModal">
-            <div class="back">
-                
-            </div>
-            <!--Modal-->
-            <div class="Modal">
-                <div class="content">
-                    <h1>Realize o pagamento Atraves das plataformas</h1>
-                    <div class="options">
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
 </body>
 </html>
