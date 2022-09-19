@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins';
     box-sizing: border-box;
 }
 
@@ -32,7 +31,7 @@ header {
 
 .PricipalTitle h1 {
     margin: 0;
-    font-size: 5rem;
+    font-size: 7rem;
 }
 
 .PricipalTitle h2 {
@@ -58,12 +57,19 @@ header {
 
 .ListTopBar li {
     font-family: 'Poppins';
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
+    cursor: pointer;
 }
 
 .Conteiner {
-    padding: 5vw;
+    background-color: #E2E2E2;
+}
+
+.ContentConteiner {
+    padding-top: 5vh;
+    margin: 0 auto;
+    width: 95%;
     background-color: #F5F5F5;
 }
 
@@ -75,11 +81,17 @@ header {
 /*Esquerda Superior*/
 .EsquerdaSuperior {
     width: 60%;
+    padding-left: 4vw;
 }
 
 
 .TitleCard{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+}
+
+.TitleCard.Oque h2{
+    padding-left: 4vw;
+    margin-top: 0;
 }
 
 .TitleCard h2 {
@@ -88,21 +100,47 @@ header {
 
 /*Card*/
 .Card {
-    background-color: #efefef;
+    font-family: 'Poppins';
+    background-color: #ecedef;
     padding: 20px;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
 }
 
 .fig {
+    display: flex;
     width: 100%;
     height: auto;   
     padding: 0;
+    padding-top: 10vh;
     margin: 0;
 }
 
+.fig .TitleCard {
+    margin-bottom: 0;
+}
+
 .fig img {
-    margin-top: 4rem;
-    width: 100%;
+    width: 50%;
+}
+
+.TextoFig {
+    background-color: #2C352C;
+    padding-left: 1rem;
+    width: 50%;
+}
+
+.TextoFig h2 {
+    font-size: 3rem;
+    color: #3a5c38;
+    font-family: 'Uncial Antiqua', cursive;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.TextoFig p {
+    color: #527450;
+    font-family: 'poppins';
+    font-size: 1.1rem;
 }
 
 /*Direita Superior*/
@@ -117,7 +155,7 @@ header {
     top: 4rem;
     width: 90%;
     height: 500px;
-    background-color: #efefef;
+    background-color: #ecedef;
 }
 
 .SectionParticipe .TitleCard h2{
@@ -127,14 +165,14 @@ header {
 .InformationCamp h3{
     font-family: 'Poppins';
     color: #909090;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .InformationCamp h4 {
     font-family: 'Poppins';
     color: 90909f;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
@@ -145,6 +183,25 @@ header {
 
 .ImagesParticipe img{
     width: 150px;
+}
+
+.ParticiparBotao {
+    font-family: 'poppins';
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 300px;
+    height: 50px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    background-color: #25be6a;
+    transition: .3s;
+    color: #fff;
+    border: none;
+}
+
+.ParticiparBotao:hover {
+    background-color: #25be6a;
 }
 
 /*Section Oque é?*/
@@ -161,7 +218,26 @@ header {
 .SectionParticipe {
     text-align: center
 }
+/*patrocinadores*/
+.Patrocinadores {
+    margin-top: 10vh;
+    background-color: #e0eff4;
+}
 
+.Patrocinadores .TitleCard{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.Imagenspatrocinadores{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Imagenspatrocinadores img {
+    height: auto;
+    width: 130px;
+}
 /*Section Participações Especiais*/
 .SectionParticipacoesEspeciais {
     width: 100%;
@@ -173,6 +249,10 @@ header {
     text-align: center;
 }
 
+.SectionParticipacoesEspeciais .TitleCard h2 {
+   font-size: 2rem;
+   font-weight: 400;
+}
 .ParticipantesConteiner {
     display: flex;
     justify-content: space-around;
@@ -180,10 +260,50 @@ header {
     width: 100%;
 }
 
+.Participante {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+
+}
+
+.whatsicon {
+    z-index: 99999;
+    width: 4.5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+}
+
+.Participante:hover {
+    box-shadow: 0px 0px 10px #00000030;
+    transition: .4s;
+}
+
+.Participante .LerMais {
+    color: #909090;
+    font-weight: 600;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+.LerMais:hover {
+    color: #3a5c38;
+    transition: .3s;
+}
+
+.LerMais svg {
+    margin-left: 5px;
+}
+
 .Participante h4{
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     margin-bottom: 0;
     text-align: center;
 }
@@ -194,17 +314,54 @@ header {
     text-align: center;
 }
 
-.ImageParticipante img{
+.ImageParticipante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
+    height: 250px;
+}
+
+.ImagemSecundaria {
+    opacity: 0;
+}
+
+.Participante:hover .ImagemPricipal {
+    transition: .3s;
+    opacity: 0;
+}
+
+.Participante:hover .ImagemSecundaria {
+    transition: .5s;
+    opacity: 1;
+}
+
+.ImageParticipante img{
+    width: 200px;
+    position: absolute;
+}
+
+.BackgroundReserva {
+    display: flex;
+    background-color: #e0eff4;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*Section Reserva de Inscrição*/
 .SectionReserveInscricao {
-    margin-top: 20vh;
-    background-color: #efefef;
+    width: 50%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: #f1f1f150;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 20px #90909050;
     border-radius: 1%;
     height: auto;
-    padding: 1rem 0 10rem 0;
+    padding: 1rem 0 3rem 0;
 }
 
 .SectionReserveInscricao .TitleCard {
@@ -228,23 +385,24 @@ form input {
     width: 100%;
     background-color: transparent;
     font-family: 'Poppins';
-    border: 2px solid #fff;
+    border: 2px solid #00000040;
     margin-top: 30px;
     height: 4rem;
-    font-size: 1rem;
+    font-size: .9rem;
     padding: 1rem;
     color: #000000;
     border-radius: .5rem;
 }
 
 select {
-    border: 2px solid #fff;
+    border: 2px solid #00000040;
     height: 4rem;
     border-radius: .5rem;
+    background-color: transparent;
     width: 49%;
     color: #000000;
     padding: .5rem;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 form input::placeholder {
@@ -253,11 +411,12 @@ form input::placeholder {
 
 #enviar-button {
     width: 100%;
-    height: 5rem;
-    font-size: 1.4rem;
+    height: 4rem;
+    font-size: 1.3rem;
     font-family: 'Poppins';
     font-weight: 800;
-    color: #1e2820;
+    background-color: #25be6a;
+    color: #fff;
     border-radius: .5rem;
     border: none;
     margin-top: 30px;
@@ -272,10 +431,11 @@ form input::placeholder {
 
 .quebra.opt {
     display: block;
-    color: #fff;
+    color: #000;
 }
 .quebra.opt h1,
 .quebra.opt h2 {
+    font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
 }
@@ -286,27 +446,34 @@ form input::placeholder {
 }
 
 footer {
-    display: flex;
+    display: block;
     align-items: center;
-    background-color: #1e2820;
+    background-color: #e0eff4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    box-shadow: 0px 0px 50px #00000050;
     padding: 1rem;
+}
+
+
+.LogoFooter {
+    display: flex;
+    justify-content: center;
 }
 
 .RedesSociais {
     display: flex;
-    justify-content: space-around;
-    width: 40%;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
-.FaleConosco {
-    width: 60%;
-    color: #fff;    
-    text-align: right;
-    font-family: 'Poppins';
-    font-size: 1.3rem;
-    font-weight: 700;
+.RedesSociais svg {
+    margin-right: 60px;
 }
-
 
 /*Modal*/
 .ConteinerModal {
