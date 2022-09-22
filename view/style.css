@@ -374,7 +374,6 @@ header {
 }
 
 .BackgroundReserva .LateralImage {
-    width: 100%;
     max-width: 50%;
 }
 
@@ -658,6 +657,70 @@ footer {
     }
 
     .BackgroundReserva .LateralImage {
+        max-width: 100%;
         margin: 0 auto;
+    }
+
+    .fig {
+        display: block;
+    }
+
+    .fig .TitleCard {
+        margin-bottom: 0;
+    }
+    
+    .fig img {
+        width: 100%;
+    }
+    
+    .TextoFig {
+        background-color: #2C352C;
+        padding-left: 1rem;
+        width: 100%;
+    }
+    
+    .TextoFig h2 {
+        font-size: 3rem;
+        color: #3a5c38;
+        font-family: 'Uncial Antiqua', cursive;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    
+    .TextoFig p {
+        color: #527450;
+        font-family: 'poppins';
+        font-size: 1.1rem;
+    }
+
+    .whatsicon {
+        z-index: 99999;
+        width: 3.5rem;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+
+    .PricipalTitle h1 {
+        margin: 0;
+        font-size: 4rem;
+    }
+
+    .PricipalTitle h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    .ListTopBar li {
+        font-size: .9rem;
+    }
+
+    .TitleCard{
+        font-size: .9rem;
+    }
+
+    .Card {
+        font-size: .9rem;
     }
 }
