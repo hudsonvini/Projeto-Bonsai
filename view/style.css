@@ -55,9 +55,18 @@ header {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    color: #fff;
     padding: 0;
     list-style: none;
+}
+
+.ListTopBar a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.ListTopBar a:hover {
+    color: #000000;
 }
 
 .ListTopBar li {
@@ -231,7 +240,9 @@ header {
 
 .Patrocinadores .TitlePatrocinadores{
     text-align: center;
-    color: #909090;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00000026;
 }
 
 .Imagenspatrocinadores{
@@ -241,7 +252,7 @@ header {
 
 .Imagenspatrocinadores img {
     height: auto;
-    width: 100px;
+    width: 120px;
 }
 /*Section Participações Especiais*/
 .SectionParticipacoesEspeciais {
@@ -270,7 +281,6 @@ header {
     position: relative;
     padding-bottom: 3rem;
     padding-top: 1rem;
-
 }
 
 .whatsicon {
@@ -361,6 +371,11 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.BackgroundReserva .LateralImage {
+    width: 100%;
+    max-width: 50%;
 }
 
 /*Section Reserva de Inscrição*/
@@ -460,6 +475,7 @@ form input::placeholder {
 footer {
     display: block;
     align-items: center;
+    background-color: #e0eff4;
     background-position: center;
     z-index: 9999;
     box-shadow: 0px 0px 50px #A7A7A770;
@@ -497,7 +513,7 @@ footer {
 
 .RedesSociais img {
     margin-right: 60px;
-    width: 60px;
+    width: 50px;
 }
 
 /*Modal*/
@@ -592,4 +608,56 @@ footer {
     border-radius: 20px;
     border: none;
     color: #fff;
+}
+
+/*Responsividade Para Telas Abaixo de 1*/
+@media screen and (max-width: 1000px) {
+    .ParticaoSuperior {
+        display: block;
+    }
+
+    .EsquerdaSuperior {
+        width: 100%;
+        padding-right: 4vw;
+    }
+
+    .DireitaSuperior {
+        width: 100%;
+        margin-top: 5vh;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    .SectionParticipe {
+        width: 100%;
+    }
+
+    .BackgroundReserva {
+        display: block;
+    }
+
+    .SectionReserveInscricao {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .ParticipantesConteiner {
+        display: block;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 90%;
+    }
+
+    .ImageParticipante {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+    }
+
+    .BackgroundReserva .LateralImage {
+        margin: 0 auto;
+    }
 }
