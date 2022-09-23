@@ -225,25 +225,22 @@
                                 <option value="Onibus">Onibus</option>
                             </select>
                         </div>
-        
                         <div class="quebra opt">
                             <h1>Deseja adiquirir a camisa do evento?</h1>
                             <h2>R$ 60,00</h2>
                             <div class="options">
                                 <div class="opcao">
                                     <label for="">Sim</label>
-                                    <input type="radio" name="sim" id="yes">
                                 </div>
                                 <div class="opcao">
                                     <label for="">Não</label>
-                                    <input type="radio" name="nao" id="nao">
                                 </div>
         
                             </div>
                         </div>
-                        <!--Botão de Enviar-->
                     </form>
-                    <button onclick="enviarform()" id="enviar-button" type="">ENVIAR</button>
+                    <!--Botão de Enviar-->
+                    <button class="" onclick="enviarform()" id="enviar-button" type="">ENVIAR</button>
                     <!--Patrocinadores-->
                     <div class="Patrocinadores">
                         <div class="TitlePatrocinadores">
@@ -266,14 +263,7 @@
         <!--Logo Footer-->
         <div class="LogoFooter">
             <img src="/Imagens/Logo ABN.png" alt="">
-        </div>
-        <!--Redes Sociais-->
-        <div class="RedesSociais">
-            <img src="https://img.icons8.com/3d-fluency/100/000000/facebook-circled.png"/>
-            <img src="https://img.icons8.com/3d-fluency/100/000000/youtube-play.png"/>
-            <img src="https://img.icons8.com/3d-fluency/100/000000/instagram-new.png"/>
-            <img src="https://img.icons8.com/3d-fluency/100/000000/telegram.png"/>
-        </div>      
+        </div>    
     </footer>
 
 
@@ -282,16 +272,25 @@
     <div class="ConteinerModal">
         <!--Modal-->
         <div class="Modal">
+            <span class="CloseButton" onclick="FecharModal()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">  <path fill-rule="evenodd" d="M.235.226a.797.797 0 011.119.006L12 10.887 22.646.232a.797.797 0 011.119-.006c.31.304.314.8.006 1.107L13.112 12l10.66 10.667a.777.777 0 01-.007 1.107.797.797 0 01-1.119-.007L12 13.113 1.354 23.767a.797.797 0 01-1.119.007.777.777 0 01-.007-1.107L10.888 12 .227 1.333A.777.777 0 01.235.226z" clip-rule="evenodd"/></svg></span>
             <div class="content">
                 <h1>Sua reserva foi realizada com sucesso!</h1>
                 <h2>Efetue o pagamento até o dia 10 de Setembro
                     ou sua reserva será cancelada automaticamente</h2>
             </div>
+            <h2 class="Metodo">Escolha o metodo de pagamento!</h2>
             <div class="PaymentForms">
-                <img src="/Imagens/Logos/Logo-PIX.svg">
-                <img src="https://gestaoclick.com.br/wp-content/uploads/Boleto_Simples_X_Boleto_Registrado_Qual_a_diferenca_10_04_04.jpg.webp">
+                <img class="imagePix" onclick="Pix()" src="/Imagens/Logos/Logo-PIX.svg">
+                <img class="imageBoleto" onclick="Boleto()" src="https://gestaoclick.com.br/wp-content/uploads/Boleto_Simples_X_Boleto_Registrado_Qual_a_diferenca_10_04_04.jpg.webp">
             </div>
-            <img src="/Imagens/Logo ABN.png" alt="">
+            <div class="pixnum">
+                <h3><br>Nome: Adinaldo Pereira Silva<br>52524524526</h3>
+                <a href="">Enviar Comprovante</a>
+            </div>
+            <div class="Boletonum">
+                <h3>Nome: Bergson oliveira<br>Numero da conta: 76578574476<br>Agência: 978</h3>
+                <a href="">Enviar Comprovante</a>
+            </div>
         </div>
     </div>
 
