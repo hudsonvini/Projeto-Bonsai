@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -118,6 +119,7 @@ header {
     background-color: #ecedef;
     padding: 20px;
     line-height: 1.5rem;
+    border-radius: 2%;
 }
 
 .fig {
@@ -162,6 +164,8 @@ header {
     display: flex;
     justify-content: center;
     width: 40%;
+    background-image: url('https://www.imagensempng.com.br/wp-content/uploads/2021/05/03-2.png');
+    background-size: 900px;
 }
 
 .SectionParticipe {
@@ -169,7 +173,13 @@ header {
     top: 4rem;
     width: 90%;
     height: 500px;
-    background-color: #ecedef;
+    background-color: #ecedef90;
+    backdrop-filter: blur(10px);
+    border-radius: 2%;
+}
+
+.SectionParticipe img {
+    width: 200px;
 }
 
 .SectionParticipe .TitleCard h2{
@@ -281,6 +291,7 @@ header {
     position: relative;
     padding-bottom: 3rem;
     padding-top: 1rem;
+    border-radius: 2%;
 }
 
 .whatsicon {
@@ -289,6 +300,13 @@ header {
     position: fixed;
     bottom: 2rem;
     right: 3rem;
+    filter: saturate(40%);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.whatsicon:hover {
+    filter: saturate(100%);
 }
 
 .Participante:hover {
@@ -353,7 +371,6 @@ header {
 
 .Participante:hover .LerMais {
     transition: .3s;
-    font-weight: 700;
     color: #3a5c38;
 }
 
@@ -361,6 +378,30 @@ header {
     width: 200px;
     position: absolute;
     filter: saturate(25%);
+}
+
+.trasitiongradient {
+    display: flex;
+    font-family: 'Philosopher', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/Imagens/Gradiente\ \(2\).png');
+    background-size: cover;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+}
+
+.trasitiongradient h1 {
+    font-family: 'Marck Script', cursive;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #2C352C;
+}
+
+.trasitiongradient h1 b {
+    color: #2C352C;
+    font-size: 2rem;
 }
 
 .BackgroundReserva {
@@ -435,8 +476,14 @@ form input::placeholder {
     color: #000000;
 }
 
-#enviar-button {
+.fundobotao {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#enviar-button {
+    width: 90%;
     height: 4rem;
     font-size: 1.1rem;
     font-family: 'Poppins';
@@ -445,6 +492,7 @@ form input::placeholder {
     color: #fff;
     border-radius: .5rem;
     border: none;
+    margin: 0 auto;
     margin-top: 30px;
 }
 
@@ -563,6 +611,12 @@ footer {
     width: 40px;
     height: 40px;
     background-color: #15d86d;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.CloseButton:hover {
+    background-color: #2C352C;
 }
 
 .content {
@@ -604,10 +658,14 @@ footer {
 
 .PaymentForms {
     background-color: #ffffff90;
-    border-radius: 20px 20px 0px 0px;
+    border-radius:20px ;
     padding: 1rem 1rem 0 1rem;
     display: flex;
     justify-content: space-evenly;
+}
+
+.PaymentForms.open {
+    border-radius: 20px 20px 0px 0px;
 }
 
 .PaymentForms img {
@@ -643,11 +701,11 @@ footer {
 }
 
 .pixnum.open {
-    background-color: #01c9b895;
+    background-color:  #01c96995;
 }
 
 .Boletonum.open {
-    background-color:  #01c96995;
+    background-color: #3a5c3895;
 }
 
 @keyframes open {
@@ -661,7 +719,7 @@ footer {
 
 .pixnum a,
 .Boletonum a {
-    background-color: #15d86d;
+    background-color: #527450;
     border-radius: 5px;
     font-weight: 600;
     text-decoration: none;
@@ -670,7 +728,7 @@ footer {
 }
 
 .pixnum a {
-    background-color: #01c9b8;
+    background-color: #15d86d;
 }
 
 .pixnum h3,
@@ -681,12 +739,12 @@ footer {
 }
 
 .imageBoleto.selected {
-    background-color:  #01c96995;
+    background-color:  #3a5c3895;
     border-radius: 1rem 1rem 0 0;
 }
 
 .imagePix.selected {
-    background-color:  #01c9b895;
+    background-color:  #01c96995;
     border-radius: 1rem 1rem 0 0;
 }
 
@@ -856,5 +914,13 @@ footer {
     .Imagenspatrocinadores img {
         height: auto;
         width: 80px;
+    }
+
+    .trasitiongradient {
+        background-size: cover;
+    }
+
+    .trasitiongradient h1 {
+        font-size: 1.3rem;
     }
 }

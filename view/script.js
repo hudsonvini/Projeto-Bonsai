@@ -23,6 +23,10 @@ function Pix() {
   /*Muda O Fundo*/
   var imagempix = document.querySelector('.imagePix')
   imagempix.classList.toggle('selected')
+
+  /*Acertar as bordas */
+  var paymentforms = document.querySelector('.PaymentForms')
+  paymentforms.classList.add('open')
 }
 
 
@@ -40,10 +44,15 @@ function Boleto() {
   /*Muda O Fundo*/
   var imagemBoleto = document.querySelector('.imageBoleto')
   imagemBoleto.classList.toggle('selected')
+
+  /*Acertar as bordas */
+  var paymentforms = document.querySelector('.PaymentForms')
+  paymentforms.classList.add('open')
 }
 
 /*Close Modal*/
 function FecharModal() {
   var ConteinerModal = document.querySelector('.ConteinerModal')
   ConteinerModal.classList.remove('open')
+
 }
